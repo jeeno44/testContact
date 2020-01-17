@@ -1,0 +1,30 @@
+Таблица users + поле token
+
+Таблица contacts
+    Поля
+        id - идентификатор (integer,autoincrement,not null,)
+        user_id - идентификатор пользователя (integet,index,not null)
+        contact_name - имя контакта (varchar250,not null)
+        contact_second_name - фамилия контакта (varchar250,null)
+        contact_phone - телефон контакта (integer,not null)
+        comment - произвольный комментарий к контакту (text, null)
+        created_at - дата создания записи
+        updated_at - дата обновления записи
+
+Таблица логов
+    Поля
+        id - идентификатор (integer,autoincrement,not null,)
+        user_id - идентификатор пользователя (integet,index,not null)
+        event - событе для логов (varchar250,not null)
+        result - результат выполнения события (varchar20,not null)
+        created_at - дата создания записи
+        updated_at - дата обновления записи
+
+Создать модель Contact
+    Сразу прописать поля fillable
+
+Создать модель Log
+    Сразу прописать поля fillable
+
+
+
